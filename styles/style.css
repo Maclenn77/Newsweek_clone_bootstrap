@@ -1,10 +1,10 @@
-section {
-  background-color: #f4f5f7;
+body {
+background-color: #f4f5f7;
 }
 
 header {
   background-color: #ff0500;
-  position: fixed;
+  position: sticky;
 }
 
 img[alt="Newsweek Logo"] {
@@ -38,4 +38,67 @@ img[alt="Image Debate"] {
   background-color: #000;
   background-size: contain;
   border-radius: 50%;
+}
+
+/* Sponsored section */
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.art-container {
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: 30px auto;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: -8px;
+  left: 0px;
+  background-color: #eaeae7;
+}
+
+/* Travel sections */
+
+.travel-container {
+  position: relative;
+  width: 95%;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+
+.category-image {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #c2d4d7;
+}
+
+/* In the magazine */
+
+.issue-image {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: #ff0500;
+  background-color: #eaeae7;
+}
+
+.features {
+  background-color: #ff0500;
+  color: #fff;
+  font-weight: bold;
+}
+
+.f-category {
+  color: #ff0500;
+  font-weight: bold;
+}
+
+.feature-notes {
+  margin-bottom: 2rem;
 }
