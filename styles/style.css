@@ -19,6 +19,15 @@ img[alt="Image Debate"] {
   height: 5rem;
 }
 
+/* Featured posts */
+.featured-image {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: #ff0500;
+  background-color: #eaeae7;
+}
+
 /* HR styles */
 .debate-pro {
   border: 2px solid #f92859;
@@ -33,7 +42,6 @@ img[alt="Image Debate"] {
 }
 
 /* Vs in Debate */
-
 .vs {
   background-color: #000;
   background-size: contain;
@@ -41,7 +49,6 @@ img[alt="Image Debate"] {
 }
 
 /* Sponsored section */
-
 .img-container {
   position: relative;
   width: 100%;
@@ -63,7 +70,6 @@ img[alt="Image Debate"] {
 }
 
 /* Travel sections */
-
 .travel-container {
   position: relative;
   width: 95%;
@@ -79,7 +85,6 @@ img[alt="Image Debate"] {
 }
 
 /* In the magazine */
-
 .issue-image {
   position: absolute;
   bottom: 0px;
