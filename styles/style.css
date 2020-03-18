@@ -12,19 +12,30 @@ img[alt="Newsweek Logo"] {
 }
 
 img[alt="Image Profile"] {
-  width: 4rem;
+  width: 3.5rem;
 }
 
-#debate-pro {
+img[alt="Image Debate"] {
+  height: 5rem;
+}
+
+/* HR styles */
+.debate-pro {
   border: 2px solid #f92859;
 }
 
-#debate-con {
+.debate-con {
   border: 2px solid #1c87fb;
 }
 
-#vs {
+.debate {
+  width: 90%;
+}
+
+/* Vs in Debate */
+
+.vs {
   background-color: #000;
+  background-size: contain;
   border-radius: 50%;
-  width: 20px;
 }

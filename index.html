@@ -48,12 +48,14 @@
   <main>
     <section class="container-fluid">
       <h2 class="hide">Main section</h2>
-      <article class="mb-5 bg-white p-10">
+      <!-- Top story -->
+      <article class="mb-4 bg-white p-10">
         <h5 class="text-muted text-uppercase"> Top Story</h5>
         <img class="img-fluid" src="img/bootstrap.png" alt="Bootstrap">
         <h2 class="text-weight-bold">Bootstrap makes building a site faster, developers say</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       </article>
+      <!-- Featured stories -->
       <aside class="bg-white">
         <h5 class="text-muted text-uppercase">Featured Stories</h5>
         <img class="img-fluid" src="img/image-1.png" alt="Image 1">
@@ -109,28 +111,25 @@
           <h2 class="text-weight-bold">Bootstrap is ok</h2>
           <p class="text-muted text-uppercase">By Mark Otto</p>
         </article>
-      </aside
+      </aside>
       <!-- The Debate section -->
       <aside class="flex-column bg-white">
         <h5>The Debate</h5>
-        <hr id="debate-pro">
-        <img src="" alt="Image Debate" class="float-left">
-        <h2>Bootstrap is the framework of the future</h2>
-        <hr>
-        <hr>
+        <hr class="debate-pro mb-0">
+        <img src="img/person-image.jpg" alt="Image Debate" class="float-left mt-1 mr-4">
+        <h2 class="h6 mt-4 mb-5 font-weight-bold">Bootstrap is the framework of the future</h2>
+        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle debate-profile float-right">
+        <hr class="mb-1 debate">
+        <hr class="m-0 debate">
+        <p class="text-uppercase">By <span class="font-weight-bold">Mark Otto</span></p>
+        <p class="text-center text-white"><span class="vs p-2">Vs</span></p>
+        <hr class="debate-con mb-0">
+        <img src="img/person-image.jpg" alt="Image Debate" class="float-left mt-1 mr-4">
+        <h2 class="h6 mt-4 mb-5 font-weight-bold">Bootstrap is the framework of the future</h2>
         <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-right">
-        <p>By Mark Otto</p>
-        <div id="vs">
-        <p class="text-center text-white">Vs</p>
-        </div>
-        <hr id="debate-con">
-        <img src="" alt="Image Debate" class="float-left">
-        <h2>Bootstrap is the framework of the future</h2>
-        <hr>
-        <hr>
-        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-right">
-        <p>By Mark Otto</p>
-
+        <hr class="mb-1 debate">
+        <hr class="m-0 debate">
+        <p class="text-uppercase">By <span class="font-weight-bold">Mark Otto</span></p>
       </aside>
     </section>
     <section>
