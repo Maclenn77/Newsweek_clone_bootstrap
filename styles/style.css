@@ -1,0 +1,30 @@
+section {
+  background-color: #f4f5f7;
+}
+
+header {
+  background-color: #ff0500;
+  position: fixed;
+}
+
+img[alt="Newsweek Logo"] {
+  height: 2.5rem;
+}
+
+img[alt="Image Profile"] {
+  width: 4rem;
+}
+
+#debate-pro {
+  border: 2px solid #f92859;
+}
+
+#debate-con {
+  border: 2px solid #1c87fb;
+}
+
+#vs {
+  background-color: #000;
+  border-radius: 50%;
+  width: 20px;
+}

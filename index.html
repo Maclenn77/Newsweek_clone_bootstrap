@@ -7,42 +7,129 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 
     <title>Newsweek clone</title>
   </head>
   <body>
-    <header>
-        <h1>Newsweek</h1>
-        <nav>
-          <ul>
-            <li>Section</li>
-            <li>section</li>
-            <li>section</li>
-            <li>section</li>
-            <li>section</li>
-            <li>section</li>
-            <li>section</li>
-            <li>section</li>
-            <li>section</li>
-            <li>section</li>
-          </ul>
-          <form class="" action="https://www.newsweek.com/search/site/" method="post">
-            <div class="">
-              <label for="edit-search-block-form--4">Search</label>
-              <input type="text" name="search_block_form" value="" placeholder="Search">
-            </div>
-          </form>
-    </nav>
-  </header>
+    <!-- Header of the Page. It contains name of the site and a nav bar -->
+    <header class="container-fluid nav">
+        <img class=col-s4 src="img/Newsweek_Logo.png" alt="Newsweek Logo">
+        <div class="col-s2">
+          <time datetime="2020-02-02">Today's date</time>
+        </div>
+        <div class="col-s3 text-uppercase font-weight-bold">
+          <a class="text-white" href="https://subscription.newsweek.com/auth">Sign in</a>
+          <a class="bg-white text-danger" target="_blank" href="https://subscription.newsweek.com/subscribe?utm_source=NWwebsite&amp;utm_medium=top-nav&amp;utm_campaign=subscribe-button#12weeks">Subscribe</a>
+        </div>
+        <!--navbar like a class button-->
+            <nav class="dropdown col-2">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"><i class="material-icons text-muted">menu</i></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><form class="" action="https://www.newsweek.com/search/site/" method="post">
+                  <div class="">
+                    <label for="edit-search-block-form--4 " class="material-icons"><i>search</i></label>
+                    <input type="text" name="search_block_form" value="" placeholder="Search">
+                  </div>
+                </form></li>
+                <li><a href="#">section</a></li>
+                <li><a href="#">section</a></li>
+                <li><a href="#">section</a></li>
+                <li><a href="#">section</a></li>
+                <li><a href="#">section</a></li>
+                <li><a href="#">section</a></li>
+                <li><a href="#">section</a></li>
+                <li><a href="#">section</a></li>
+                <li><a href="#">section</a></li>
+              </ul>
+            </nav>
+    </header>
   <main>
-    <section>
-      <aside class="">
+    <section class="container-fluid">
+      <h2 class="hide">Main section</h2>
+      <article class="mb-5 bg-white p-10">
+        <h5 class="text-muted text-uppercase"> Top Story</h5>
+        <img class="img-fluid" src="img/bootstrap.png" alt="Bootstrap">
+        <h2 class="text-weight-bold">Bootstrap makes building a site faster, developers say</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </article>
+      <aside class="bg-white">
+        <h5 class="text-muted text-uppercase">Featured Stories</h5>
+        <img class="img-fluid" src="img/image-1.png" alt="Image 1">
+        <h2 class="text-weight-bold">Web design never was so easy</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <img class="img-fluid" src="img/image-2.png" alt="Image 2">
+        <h2 class="text-weight-bold">Is Bootstrap 4 the future framework?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
       </aside>
-      <article class="">
-
-      </article>
-      <aside class="">
+      <!-- Opinion section-->
+      <aside class="bg-white">
+        <h5 class="text-muted text-uppercase">Opinion</h5>
+        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
+        <article class="">
+          <h2 class="text-weight-bold">Bootstrap is ok</h2>
+          <p class="text-muted text-uppercase">By Mark Otto</p>
+        </article>
+        <hr>
+        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
+        <article class="">
+          <h2 class="text-weight-bold">Bootstrap is ok</h2>
+          <p class="text-muted text-uppercase">By Mark Otto</p>
+        </article>
+        <hr>
+        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
+        <article class="">
+          <h2 class="text-weight-bold">Bootstrap is ok</h2>
+          <p class="text-muted text-uppercase">By Mark Otto</p>
+        </article>
+        <hr>
+        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
+        <article class="">
+          <h2 class="text-weight-bold">Bootstrap is ok</h2>
+          <p class="text-muted text-uppercase">By Mark Otto</p>
+        </article>
+        <hr>
+        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
+        <article class="">
+          <h2 class="text-weight-bold">Bootstrap is ok</h2>
+          <p class="text-muted text-uppercase">By Mark Otto</p>
+        </article>
+        <hr>
+        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
+        <article class="">
+          <h2 class="text-weight-bold">Bootstrap is ok</h2>
+          <p class="text-muted text-uppercase">By Mark Otto</p>
+        </article>
+        <hr>
+        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
+        <article class="">
+          <h2 class="text-weight-bold">Bootstrap is ok</h2>
+          <p class="text-muted text-uppercase">By Mark Otto</p>
+        </article>
+      </aside
+      <!-- The Debate section -->
+      <aside class="flex-column bg-white">
+        <h5>The Debate</h5>
+        <hr id="debate-pro">
+        <img src="" alt="Image Debate" class="float-left">
+        <h2>Bootstrap is the framework of the future</h2>
+        <hr>
+        <hr>
+        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-right">
+        <p>By Mark Otto</p>
+        <div id="vs">
+        <p class="text-center text-white">Vs</p>
+        </div>
+        <hr id="debate-con">
+        <img src="" alt="Image Debate" class="float-left">
+        <h2>Bootstrap is the framework of the future</h2>
+        <hr>
+        <hr>
+        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-right">
+        <p>By Mark Otto</p>
 
       </aside>
     </section>
