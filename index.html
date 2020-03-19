@@ -14,42 +14,50 @@
     <title>Newsweek clone</title>
   </head>
   <body>
-    <!-- Header of the Page. It contains name of the site and a nav bar -->
-    <header class="container-fluid nav">
-        <img class=col-s4 src="img/Newsweek_Logo.png" alt="Newsweek Logo">
-        <div class="col-s2">
-          <time datetime="2020-02-02">Today's date</time>
+    <!-- Header of the Page. It contains name of the site and a navbar -->
+    <!-- Navbar transforms the header in a navbar -->
+    <header class="sticky">
+      <nav class="navbar justify-content-start top">
+        <img class="navbar-brand" src="img/Newsweek_Logo.png" alt="Newsweek Logo">
+        <div class="weather-time mr-auto">
+          <a href="#"> <img src="img/weather-icon.png" alt="weather"> 29° </a>
+          <span class="country">Tlajomulco, Mexico</span>
         </div>
-        <div class="col-s3 text-uppercase font-weight-bold">
+        <div class="justify-self-end text-uppercase font-weight-bold">
           <a class="text-white" href="https://subscription.newsweek.com/auth">Sign in</a>
-          <a class="bg-white text-danger" target="_blank" href="https://subscription.newsweek.com/subscribe?utm_source=NWwebsite&amp;utm_medium=top-nav&amp;utm_campaign=subscribe-button#12weeks">Subscribe</a>
+          <a class="bg-white text-danger p-1" target="_blank" href="https://subscription.newsweek.com/subscribe?utm_source=NWwebsite&amp;utm_medium=top-nav&amp;utm_campaign=subscribe-button#12weeks">Subscribe <i class="fa fa-angle-right"></i></a>
         </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2">
+        <span class="navbar-toggler-icon material-icons pt-1 text-muted">menu</span>
+        </button>
+        </nav>
         <!--navbar like a class button-->
-            <nav class="dropdown col-2">
-              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"><i class="material-icons text-muted">menu</i></button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><form class="" action="https://www.newsweek.com/search/site/" method="post">
-                  <div class="">
-                    <label for="edit-search-block-form--4 " class="material-icons"><i>search</i></label>
-                    <input type="text" name="search_block_form" value="" placeholder="Search">
-                  </div>
-                </form></li>
-                <li><a href="#">section</a></li>
-                <li><a href="#">section</a></li>
-                <li><a href="#">section</a></li>
-                <li><a href="#">section</a></li>
-                <li><a href="#">section</a></li>
-                <li><a href="#">section</a></li>
-                <li><a href="#">section</a></li>
-                <li><a href="#">section</a></li>
-                <li><a href="#">section</a></li>
+        <nav class="navbar navbar-expand-md bg-white">
+          <div class="navbar-collapse collapse" id="navbar2">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <form class="" action="https://www.newsweek.com/search/site/" method="post">
+                    <div>
+                      <label for="edit-search-block-form--4 " class="material-icons"><i>search</i></label>
+                      <input type="text" name="search_block_form" value="" placeholder="Search">
+                    </div>
+                  </form>
+                </li>
+                <li class="nav-item"><a href="#">section</a></li>
+                <li class="nav-item"><a href="#">section</a></li>
+                <li class="nav-item"><a href="#">section</a></li>
+                <li class="nav-item"><a href="#">section</a></li>
+                <li class="nav-item"><a href="#">section</a></li>
+                <li class="nav-item"><a href="#">section</a></li>
+                <li class="nav-item"><a href="#">section</a></li>
+                <li class="nav-item"><a href="#">section</a></li>
+                <li class="nav-item"><a href="#">section</a></li>
               </ul>
-            </nav>
+          </div>
+        </nav>
     </header>
     <!-- Main section  -->
-  <main>
-    <section class="container-fluid">
-      <h2 class="hide d-none">Main section</h2>
+  <main class="container-fluid">
       <!-- Top story -->
       <article class="mb-4 bg-white p-10">
         <h5 class="text-muted text-uppercase"> Top Story</h5>
@@ -58,7 +66,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       </article>
       <!-- Featured stories -->
-      <aside class="bg-white">
+      <aside class="bg-white col-md-5">
         <h5 class="text-muted text-uppercase">Featured Stories</h5>
         <img class="img-fluid" src="img/image-1.png" alt="Image 1">
         <h2 class="text-weight-bold">Web design never was so easy</h2>
@@ -133,7 +141,6 @@
         <hr class="m-0 debate">
         <p class="text-uppercase">By <span class="font-weight-bold">Mark Otto</span></p>
       </aside>
-    </section>
     <!-- Sponsored Insights -->
     <section class="sponsored flex-column bg-white mt-6">
       <h2 class="d-none">Sponsored Insight</h2>

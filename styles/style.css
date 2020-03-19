@@ -2,11 +2,14 @@ body {
 background-color: #f4f5f7;
 }
 
-header {
-  background-color: #ff0500;
+.sticky {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+.top {
+  background-color: #ff0500;
 }
 
 article {
@@ -15,7 +18,7 @@ article {
 }
 
 img[alt="Newsweek Logo"] {
-  height: 2.5rem;
+  height: 3rem;
 }
 
 img[alt="Image Profile"] {
@@ -24,6 +27,20 @@ img[alt="Image Profile"] {
 
 img[alt="Image Debate"] {
   height: 5rem;
+}
+
+img[alt="weather"] {
+  width: 1.2rem;
+}
+
+.weather-time {
+  display: flex;
+  font-weight: bold;
+  color: #fff;
+}
+
+.country {
+  display: none;
 }
 
 footer {
