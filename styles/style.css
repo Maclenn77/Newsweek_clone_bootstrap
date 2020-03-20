@@ -91,6 +91,15 @@ h6 a:hover {
   text-decoration: none !important;
 }
 
+li h6 a:hover {
+  background-color: #000;
+  color: #fff!important;
+}
+
+ a:hover[class="short"] {
+  color: red!important;
+}
+
 /* Featured posts */
 .featured-image {
   position: absolute;
