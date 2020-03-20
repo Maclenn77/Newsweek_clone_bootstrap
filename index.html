@@ -6,56 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
-
     <title>Newsweek clone</title>
   </head>
   <body>
     <!-- Header of the Page. It contains name of the site and a navbar -->
     <!-- Navbar transforms the header in a navbar -->
-    <header class="sticky-top">
-      <nav class="navbar justify-content-start top d-lg-flex justify-content-lg-between navbar-toggleable-md">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="#" class="navbar-brand order-lg-1 mx-lg-auto align-self-lg-end"><img src="img/Newsweek_Logo.png" alt="Newsweek Logo"></a>
-        <div class="weather-time mr-auto flex-lg-column mr-lg-0 order-lg-0">
-          <a href="#"> <img src="https://g.newsweek.com/img/weather/34.png" alt="weather"> 29° <span class="country">Tlajomulco, Mexico</span></a>
+    <nav class="navbar navbar-expand-lg sticky-top flex-column navbar-dark">
+      <!-- Red part of navbar -->
+      <div class="d-flex flex-row align-self-start justify-content-start navcolor w-100 px-2 justify-content-lg-between">
+        <a class="navbar-brand order-lg-2" href="#"> <img src="img/Newsweek_Logo.png" alt="Newsweek Logo"> </a>
+        <div class="weather-time align-self-center mr-auto order-lg-1 d-lg-flex flex-column mr-lg-0 ml-lg-2">
+          <a href="#"><img src="https://g.newsweek.com/img/weather/34.png" alt="weather">18° <span class="country">Tlajomulco, Mx ></span></a>
           <time datetime="2020-03-20">Fri, Mar 20, 2020</time>
         </div>
-        <div class="justify-self-end text-uppercase font-weight-bold order-lg-2">
-          <a class="text-white" href="https://subscription.newsweek.com/auth">Sign in</a>
-          <a class="bg-white text-danger p-1" target="_blank" href="https://subscription.newsweek.com/subscribe?utm_source=NWwebsite&amp;utm_medium=top-nav&amp;utm_campaign=subscribe-button#12weeks">Subscribe <i class="fa fa-angle-right"></i></a>
+        <div class="align-self-end d-block m-3 order-lg-3 h5">
+          <span class="text-uppercase font-weight-bold text-white px-2"><a href="#">Sign in</a></span>
+          <span class="text-uppercase font-weight-bold bg-white px-2 py-1"><a href="#" id="sign">Subscribe ></a></span>
         </div>
-        </nav>
-        <!--navbar like a class button-->
-        <nav class="navbar navbar-expand-ls bg-white">
-          <div class="navbar-collapse collapse" id="navbar2">
-            <ul class="navbar-nav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <!-- White part of navbar -->
+      <div class="collapse navbar-collapse align-self-stretch w-100 bg-white" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0 input-group d-flex d-lg-none">
+          <input class="form-control mr-sm-2 input-group-text" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn my-2 my-sm-0 input-group-append" type="submit"><i class="material-icons">search</i></button>
+        </form>
+        <ul class="navbar-nav mr-auto mr-md-0 ml-md-6">
               <li class="nav-item">
-                <form class="" action="https://www.newsweek.com/search/site/" method="post">
-                    <div>
-                      <label for="edit-search-block-form--4 " class="material-icons"><i>search</i></label>
-                      <input type="text" name="search_block_form" value="" placeholder="Search">
-                    </div>
-                  </form>
-                </li>
-                <li class="nav-item"><a href="#">section</a></li>
-                <li class="nav-item"><a href="#">section</a></li>
-                <li class="nav-item"><a href="#">section</a></li>
-                <li class="nav-item"><a href="#">section</a></li>
-                <li class="nav-item"><a href="#">section</a></li>
-                <li class="nav-item"><a href="#">section</a></li>
-                <li class="nav-item"><a href="#">section</a></li>
-                <li class="nav-item"><a href="#">section</a></li>
-                <li class="nav-item"><a href="#">section</a></li>
-              </ul>
-          </div>
-        </nav>
-    </header>
+                <h6><a class="nav-link text-nowrap" href="#">U.S. <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">World <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item dropdown">
+                <h6><a class="nav-link text-nowrap" href="#">Business <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Tech & Science <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Culture <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Newsgeek <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Sports <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Health <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">The Debate <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Vantage <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Weather <span class="short"> > </span></a></h6>
+              </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 input-group d-none d-lg-flex">
+          <input class="form-control mr-sm-2 input-group-text" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn my-2 my-sm-0 input-group-append" type="submit"><i class="material-icons">search</i></button>
+        </form>
+      </div>
+    </nav>
     <!-- Main section  -->
   <main class="grid-area">
       <!-- Top story -->

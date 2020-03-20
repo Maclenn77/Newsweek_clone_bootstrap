@@ -3,17 +3,22 @@ html {
 }
 
 body {
-background-color: #f4f5f7;
-
+  background-color: #f4f5f7;
 }
 
-/* .sticky {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-} */
+h6 {
+  color: #000 !important;
+}
 
-.top {
+nav {
+  padding: 0!important;
+}
+
+main {
+  margin: 5px;
+}
+
+.navcolor {
   background-color: #ff0500;
 }
 
@@ -38,6 +43,10 @@ img[alt="weather"] {
   width: 1.2rem;
 }
 
+time {
+  display: none;
+}
+
 .weather-time {
   display: flex;
   font-weight: bold;
@@ -58,6 +67,14 @@ a {
   color: inherit;
 }
 
+a#sign {
+  color: #ff0500;
+}
+
+h6 a {
+  color: #000!important;
+}
+
 a:hover {
   color:inherit;
   text-decoration: none;
@@ -70,8 +87,8 @@ h5 a:hover {
 }
 
 h6 a:hover {
-  color: #ff0500;
-  text-decoration: none;
+  color: #ff0500 !important;
+  text-decoration: none !important;
 }
 
 /* Featured posts */
@@ -202,10 +219,6 @@ a.icons:hover {
   opacity: .8;
 }
 
-ul {
-  list-style: none;
-}
-
 footer ul a {
   color: #000;
   opacity: .5;
@@ -278,6 +291,13 @@ footer ul a:hover {
   grid-area: news;
 }
 
+.large {
+  display: none;
+}
+
+.short {
+  display: inline-block;
+}
 @media screen and (min-width: 768px) {
   .grid-area {
     display: grid;
@@ -334,6 +354,10 @@ footer ul a:hover {
   .newsletter figcaption {
     width: 100vw;
   }
+
+  .country {
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -356,5 +380,34 @@ footer ul a:hover {
 
   .newsletter figcaption {
     width: 60vw;
+  }
+
+  time {
+    display: block;
+  }
+
+  img[alt="Newsweek Logo"] {
+    height: 8rem;
+    margin: auto;
+  }
+
+  li h6 {
+    display: inline-block !important;
+    font-weight: bold !important;
+    padding-top: .8rem;
+    opacity: 1 !important;
+  }
+
+  .large {
+    display: inline;
+    font-weight: lighter;
+  }
+
+  .short {
+    display: none;
+  }
+
+  .toggle-line {
+    display: none;
   }
 }
