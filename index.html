@@ -17,19 +17,19 @@
     <!-- Header of the Page. It contains name of the site and a navbar -->
     <!-- Navbar transforms the header in a navbar -->
     <header class="sticky-top">
-      <nav class="navbar justify-content-start top">
-        <a href="#" class="navbar-brand"><img src="img/Newsweek_Logo.png" alt="Newsweek Logo"></a>
-        <div class="weather-time mr-auto">
-          <a href="#"> <img src="img/weather-icon.png" alt="weather"> 29° </a>
-          <span class="country">Tlajomulco, Mexico</span>
+      <nav class="navbar justify-content-start top d-lg-flex justify-content-lg-between navbar-toggleable-md">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand order-lg-1 mx-lg-auto align-self-lg-end"><img src="img/Newsweek_Logo.png" alt="Newsweek Logo"></a>
+        <div class="weather-time mr-auto flex-lg-column mr-lg-0 order-lg-0">
+          <a href="#"> <img src="https://g.newsweek.com/img/weather/34.png" alt="weather"> 29° <span class="country">Tlajomulco, Mexico</span></a>
+          <time datetime="2020-03-20">Fri, Mar 20, 2020</time>
         </div>
-        <div class="justify-self-end text-uppercase font-weight-bold">
+        <div class="justify-self-end text-uppercase font-weight-bold order-lg-2">
           <a class="text-white" href="https://subscription.newsweek.com/auth">Sign in</a>
           <a class="bg-white text-danger p-1" target="_blank" href="https://subscription.newsweek.com/subscribe?utm_source=NWwebsite&amp;utm_medium=top-nav&amp;utm_campaign=subscribe-button#12weeks">Subscribe <i class="fa fa-angle-right"></i></a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2">
-        <span class="navbar-toggler-icon material-icons pt-1 text-muted">menu</span>
-        </button>
         </nav>
         <!--navbar like a class button-->
         <nav class="navbar navbar-expand-ls bg-white">
