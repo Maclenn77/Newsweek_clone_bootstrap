@@ -104,7 +104,7 @@ li h6 a:hover {
   color: #fff !important;
 }
 
- a:hover[class="short"] {
+a:hover[class="short"] {
   color: red !important;
 }
 
@@ -316,30 +316,30 @@ footer ul a:hover {
     display: grid;
     width: auto;
     grid-template-areas:
-                        "feat top"
-                        "feat top"
-                        "feat cult"
-                        "feat more"
-                        "spon more"
-                        "spon more"
-                        "spon more"
-                        "spon more"
-                        "spon more"
-                        "spon more"
-                        "opin opin"
-                        "opin opin"
-                        "deba deba"
-                        "deba deba"
-                        "lnew lnew"
-                        "spon2 spon2"
-                        "maga maga"
-                        "edit edit"
-                        "feas feas"
-                        "subs subs"
-                        "news news";
+      "feat top"
+      "feat top"
+      "feat more"
+      "feat cult"
+      "spon more"
+      "spon more"
+      "spon more"
+      "spon more"
+      "spon more"
+      "spon more"
+      "opin opin"
+      "opin opin"
+      "deba deba"
+      "deba deba"
+      "lnew lnew"
+      "spon2 spon2"
+      "maga maga"
+      "edit edit"
+      "feas feas"
+      "subs subs"
+      "news news";
     grid-template-columns: 1fr 1.2fr;
     grid-column-gap: 10;
-}
+  }
 
   .feat-extra {
     display: block;
