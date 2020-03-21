@@ -14,7 +14,7 @@ h6 {
 }
 
 nav {
-  padding: 0!important;
+  padding: 0 !important;
 }
 
 main {
@@ -101,11 +101,11 @@ h6 a:hover {
 
 li h6 a:hover {
   background-color: #000;
-  color: #fff!important;
+  color: #fff !important;
 }
 
  a:hover[class="short"] {
-  color: red!important;
+  color: red !important;
 }
 
 /* Featured posts */
