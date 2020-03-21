@@ -378,16 +378,17 @@ footer ul a:hover {
   .grid-area {
     display: grid;
     width: auto;
-    grid-template-areas: "feat top top opin"
-                         "feat cult cult opin"
-                         "feat more more deba"
-                         "spon more more lnew"
-                         "spon more more spon2"
-                         "spon more more spon2"
-                         "maga maga maga maga"
-                         "edit edit edit edit"
-                         "feas feas feas feas"
-                         "subs subs subs news";
+    grid-template-areas:
+                        "feat top top opin"
+                        "feat cult cult opin"
+                        "feat more more deba"
+                        "spon more more lnew"
+                        "spon more more spon2"
+                        "spon more more spon2"
+                        "maga maga maga maga"
+                        "edit edit edit edit"
+                        "feas feas feas feas"
+                        "subs subs subs news";
     grid-template-columns: repeat(4, 25vw);
     grid-column-gap: 10;
   }
