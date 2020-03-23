@@ -13,7 +13,7 @@ In this project, I'll be cloning Newsweek, a news site that has been builded wit
 
 ## Live demo
 
-<a href="https://raw.githack.com/Maclenn77/Building-with-responsive-design/feature-branch/index.html" target="_blank">Check it out</a>💻
+<a href="https://rawcdn.githack.com/Maclenn77/Newsweek_clone_bootstrap/101ce00699354b9e6946e4ce941aa61d443d5552/index.html" target="_blank">Check it out</a>💻
 
 ## Mobile version
 
