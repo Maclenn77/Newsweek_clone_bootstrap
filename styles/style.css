@@ -1,10 +1,10 @@
 /* Here start CSS file */
-html {
-  font-size: 14px;
-}
 
 body {
   background-color: #f4f5f7;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 /* Marked important to overlap bootstrap rules */
@@ -30,6 +30,12 @@ article {
   padding-top: 1.8rem;
 }
 
+}
+
+img {
+  margin-bottom: .8rem;
+}
+
 img[alt="Newsweek Logo"] {
   height: 3rem;
 }
@@ -46,8 +52,8 @@ img[alt="weather"] {
   width: 1.2rem;
 }
 
-time {
-  display: none;
+p {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .weather-time {
@@ -74,6 +80,16 @@ a#sign {
   color: #ff0500;
 }
 
+h4,
+h3 {
+  color: #000;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: bold!important;
+}
+
 h6 a {
   color: #000 !important;
 }
@@ -88,7 +104,9 @@ a:hover {
   text-decoration: none;
 }
 
-h5 a:hover {
+h5 a:hover,
+h4 a:hover,
+h3 a:hover {
   color: inherit;
   text-decoration: underline;
   text-decoration-color: #ff0500;
@@ -115,6 +133,13 @@ a:hover[class="short"] {
   left: 0;
   color: #ff0500;
   background-color: #eaeae7;
+}
+
+/* Search bar  */
+
+.form-control {
+  background: #fff;
+  border: none;
 }
 
 /* HR styles */
@@ -189,7 +214,7 @@ a:hover[class="short"] {
 }
 
 .f-category {
-  color: #ff0500;
+  color: #ff0500!important;
   font-weight: bold;
 }
 
@@ -318,9 +343,8 @@ footer ul a:hover {
     grid-template-areas:
       "feat top"
       "feat top"
-      "feat more"
       "feat cult"
-      "spon more"
+      "feat more"
       "spon more"
       "spon more"
       "spon more"
@@ -338,7 +362,7 @@ footer ul a:hover {
       "subs subs"
       "news news";
     grid-template-columns: 1fr 1.2fr;
-    grid-column-gap: 10;
+    grid-column-gap: 10px;
   }
 
   .feat-extra {
@@ -375,30 +399,32 @@ footer ul a:hover {
 }
 
 @media screen and (min-width: 992px) {
+  nav {
+    max-width: 1224px;
+    margin: auto;
+  }
+
   .grid-area {
     display: grid;
-    width: auto;
+    max-width: 1224px;
+    margin: auto;
     grid-template-areas:
-      "feat top top opin"
-      "feat cult cult opin"
-      "feat more more deba"
-      "spon more more lnew"
-      "spon more more spon2"
-      "spon more more spon2"
-      "maga maga maga maga"
-      "edit edit edit edit"
-      "feas feas feas feas"
-      "subs subs subs news";
-    grid-template-columns: repeat(4, 25vw);
-    grid-column-gap: 10;
+      "feat feat feat top top top top opin opin opin"
+      "feat feat feat cult cult cult cult opin opin opin"
+      "feat feat feat more more more more deba deba deba"
+      "spon spon spon more more more more lnew lnew lnew"
+      "spon spon spon more more more more spon2 spon2 spon2"
+      "spon spon spon more more more more spon2 spon2 spon2"
+      "maga maga maga maga maga maga maga maga maga maga"
+      "edit edit edit edit edit edit edit edit edit edit"
+      "feas feas feas feas feas feas feas feas feas feas"
+      "subs subs subs subs subs subs subs news news news";
+    grid-template-columns: repeat(10, 9%);
+    grid-column-gap: 10px;
   }
 
   .newsletter figcaption {
     width: 60vw;
-  }
-
-  time {
-    display: block;
   }
 
   img[alt="Newsweek Logo"] {
@@ -424,5 +450,13 @@ footer ul a:hover {
 
   .toggle-line {
     display: none;
+  }
+
+  img[alt="Newsletter"] {
+    display: block;
+    width: 65vw;
+    height: auto;
+    margin: 0;
+    object-fit: cover;
   }
 }

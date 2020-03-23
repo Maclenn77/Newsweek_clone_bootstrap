@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Newsweek clone</title>
   </head>
@@ -21,7 +22,7 @@
         <a class="navbar-brand order-lg-2" href="#"> <img src="img/Newsweek_Logo.png" alt="Newsweek Logo"> </a>
         <div class="weather-time align-self-center mr-auto order-lg-1 d-lg-flex flex-column mr-lg-0 ml-lg-2">
           <a href="#"><img src="https://g.newsweek.com/img/weather/34.png" alt="weather">18° <span class="country">Tlajomulco, Mx ></span></a>
-          <time datetime="2020-03-20">Fri, Mar 20, 2020</time>
+          <time class="d-none d-lg-block" datetime="2020-03-20">Fri, Mar 20, 2020</time>
         </div>
         <div class="align-self-end d-block m-3 order-lg-3 h5">
           <span class="text-uppercase font-weight-bold text-white px-2"><a href="#">Sign in</a></span>
@@ -32,7 +33,7 @@
         </button>
       </div>
       <!-- White part of navbar -->
-      <div class="collapse navbar-collapse align-self-stretch bg-white" id="navbarSupportedContent">
+      <div class="font-weight-bold collapse navbar-collapse align-self-stretch bg-white" id="navbarSupportedContent">
         <form class="form-inline my-2 my-lg-0 input-group d-flex d-lg-none">
           <input class="form-control mr-sm-2 input-group-text" type="search" placeholder="Search" aria-label="Search">
           <button class="btn my-2 my-sm-0 input-group-append" type="submit"><i class="material-icons">search</i></button>
@@ -44,7 +45,7 @@
               <li class="nav-item">
                 <h6><a class="nav-link text-nowrap" href="#">World <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item">
                 <h6><a class="nav-link text-nowrap" href="#">Business <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
               </li>
               <li class="nav-item">
@@ -79,10 +80,10 @@
       </div>
     </nav>
     <!-- Main section  -->
-  <main class="grid-area">
+  <main class="grid-area bg-white">
       <!-- Top story -->
       <article class="top-story mb-4 bg-white">
-        <h5 class="text-muted text-uppercase"> Top Story</h5>
+        <h5 class="text-muted text-uppercase">Top Story</h5>
         <img class="img-fluid" src="img/bootstrap-top.jpg" alt="Bootstrap">
         <h2 class="text-weight-bold">Bootstrap makes building a site faster, developers say</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -105,47 +106,53 @@
       <!-- Opinion section-->
       <article class="opinion-section bg-white">
         <h5 class="text-muted text-uppercase">Opinion</h5>
-        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
-        <article class="">
+        <section class="d-flex">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle align-self-center mr-3">
+        <div class="">
           <h2 class="text-weight-bold">Bootstrap is ok</h2>
           <p class="text-muted text-uppercase">By Mark Otto</p>
-        </article>
+        </div>
+      </section>
         <hr>
-        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
-        <article class="">
+        <section class="d-flex">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle align-self-center mr-3">
+        <div class="">
           <h2 class="text-weight-bold">Bootstrap is ok</h2>
           <p class="text-muted text-uppercase">By Mark Otto</p>
-        </article>
+        </div>
+      </section>
         <hr>
-        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
-        <article class="">
+        <section class="d-flex">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle align-self-center mr-3">
+        <div class="">
           <h2 class="text-weight-bold">Bootstrap is ok</h2>
           <p class="text-muted text-uppercase">By Mark Otto</p>
-        </article>
+        </div>
+      </section>
         <hr>
-        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
-        <article class="">
+        <section class="d-flex">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle align-self-center mr-3">
+        <div class="">
           <h2 class="text-weight-bold">Bootstrap is ok</h2>
           <p class="text-muted text-uppercase">By Mark Otto</p>
-        </article>
+        </div>
+      </section>
         <hr>
-        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
-        <article class="">
+        <section class="d-flex">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle align-self-center mr-3">
+        <div class="">
           <h2 class="text-weight-bold">Bootstrap is ok</h2>
           <p class="text-muted text-uppercase">By Mark Otto</p>
-        </article>
+        </div>
+      </section>
         <hr>
-        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
-        <article class="">
+        <section class="d-flex">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle align-self-center mr-3">
+        <div class="">
           <h2 class="text-weight-bold">Bootstrap is ok</h2>
           <p class="text-muted text-uppercase">By Mark Otto</p>
-        </article>
-        <hr>
-        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-left mr-3">
-        <article class="">
-          <h2 class="text-weight-bold">Bootstrap is ok</h2>
-          <p class="text-muted text-uppercase">By Mark Otto</p>
-        </article>
+        </div>
+      </section>
       </article>
       <!-- The Debate section -->
       <article class="debate-section flex-column bg-white">
@@ -153,7 +160,7 @@
         <hr class="debate-pro mb-0">
         <img src="img/bootstrap.png" alt="Image Debate" class="float-left mr-4">
         <h2 class="h6 mt-4 mb-5 font-weight-bold">Bootstrap is the framework of the future</h2>
-        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle debate-profile float-right">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle debate-profile float-right">
         <hr class="mb-1 debate">
         <hr class="m-0 debate">
         <p class="text-uppercase">By <span class="font-weight-bold">Mark Otto</span></p>
@@ -161,14 +168,14 @@
         <hr class="debate-con mb-0">
         <img src="img/foundation.jpg" alt="Image Debate" class="float-left mr-4">
         <h2 class="h6 mt-4 mb-5 font-weight-bold">Bootstrap is not the framework of the future</h2>
-        <img src="img/profile-image.jpeg" alt="Image Profile" class="rounded-circle float-right">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle float-right">
         <hr class="mb-1 debate">
         <hr class="m-0 debate">
         <p class="text-uppercase">By <span class="font-weight-bold">Zurb Foundation</span></p>
       </article>
       <!-- Sponsored Insights -->
       <section class="sponsored flex-column bg-white mt-6">
-        <h2 class="d-none">Sponsored Insight</h2>
+        <h5 class="d-none">Sponsored Insight</h5>
           <article class="art-container">
           <figure class="img-container m-auto">
             <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
@@ -208,7 +215,7 @@
       </section>
     <!-- More stories -->
       <article class="more-stories bg-white">
-        <h2 class="text-muted">More stories</h2>
+        <h5 class="text-muted text-uppercase">More stories</h5>
         <section class="border-top">
           <img src="img/bootstrap.png" alt="Image Debate" class="float-left mr-4">
           <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
@@ -272,7 +279,7 @@
       </article>
     <!-- Culture & travel section -->
       <article class="culture-travel bg-white">
-        <h2 class="text-muted text-uppercase">Culture & Travel</h2>
+        <h5 class="text-muted text-uppercase">Culture & Travel</h5>
         <div class="d-flex flex-column flex-md-row">
           <section class="travel-container">
             <figure class="img-container m-auto">
@@ -308,7 +315,7 @@
       </article>
     <!-- Latest News section -->
       <article class="latest-news bg-white">
-        <h2 class="text-muted text-uppercase">Latest News</h2>
+        <h5 class="text-muted text-uppercase">Latest News</h5>
           <section class="d-flex">
             <img src="img/bootstrap.png" alt="Image Debate" class="float-left mr-4">
             <h6 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h6>
@@ -382,49 +389,49 @@
             <div class="d-flex mt-2">
               <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
             </div>
-          <h5 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h5>
+          <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
         </section>
           <section class="feature-notes col-md">
             <img class="img-fluid" src="img/image-1.png" alt="Image 1">
             <div class="d-flex mt-2">
             <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
           </div>
-            <h5 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h5>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
           </section>
           <section class="feature-notes col-md">
             <img class="img-fluid" src="img/image-1.png" alt="Image 1">
             <div class="d-flex mt-2">
               <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
             </div>
-            <h5 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h5>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
           </section>
           <section class="feature-notes col-md">
             <img class="img-fluid" src="img/image-1.png" alt="Image 1">
             <div class="d-flex mt-2">
               <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a   href="#">Health</a></h6>
             </div>
-            <h5 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h5>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
           </section>
           <section class="feature-notes col-md">
             <img class="img-fluid" src="img/image-1.png" alt="Image 1">
             <div class="d-flex mt-2">
             <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
             </div>
-            <h5 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h5>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
           </section>
           <section class="feature-notes col-md">
             <img class="img-fluid" src="img/image-1.png" alt="Image 1">
             <div class="d-flex mt-2">
               <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
             </div>
-            <h5 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h5>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
           </section>
           <section class="feature-notes col-md">
             <img class="img-fluid" src="img/image-1.png" alt="Image 1">
             <div class="d-flex mt-2">
               <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
             </div>
-            <h5 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h5>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
           </section>
         </div>
       </article>
@@ -442,7 +449,7 @@
                 Tech & Science
               </figcaption>
               </figure>
-              <h5 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h5>
+              <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
               <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </section>
           <section class="travel-container col-md">
@@ -452,7 +459,7 @@
             Tech & Science
               </figcaption>
             </figure>
-            <h5 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h5>
+            <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </section>
           <section class="travel-container col-md">
@@ -462,7 +469,7 @@
             Tech & Science
               </figcaption>
             </figure>
-            <h5 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h5>
+            <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </section>
           <section class="travel-container col-md">
@@ -472,7 +479,7 @@
             Tech & Science
               </figcaption>
             </figure>
-            <h5 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h5>
+            <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </section>
           <section class="travel-container col-md">
@@ -482,7 +489,7 @@
             Tech & Science
             </figcaption>
             </figure>
-            <h5 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h5>
+            <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </section>
           <section class="travel-container col-md">
@@ -492,7 +499,7 @@
             Tech & Science
             </figcaption>
           </figure>
-          <h5 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h5>
+          <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
         <section class="travel-container col-md">
@@ -502,7 +509,7 @@
             Tech & Science
             </figcaption>
           </figure>
-          <h5 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h5>
+          <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
         <section class="travel-container col-md">
@@ -512,7 +519,7 @@
             Tech & Science
           </figcaption>
           </figure>
-          <h5 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h5>
+          <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
       </div>
@@ -536,7 +543,7 @@
               </div>
             </figcaption>
           </figure>
-          <h3>Look at this winter images!</h3>
+          <h3><a href="#">Look at this winter images!</a></h3>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
         <section class="travel-container">
@@ -550,7 +557,7 @@
               </div>
             </figcaption>
           </figure>
-          <h3>Look at this winter images!</h3>
+          <h3><a href="#">Look at this winter images!</a></h3>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
         <section class="travel-container">
@@ -564,7 +571,7 @@
               </div>
             </figcaption>
           </figure>
-          <h3>Look at this winter images!</h3>
+          <h3><a href="#">Look at this winter images!</a></h3>
           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
       </div>
@@ -602,7 +609,6 @@
               <img src="img/bootstrap.png" alt="Image Debate" class="float-left mr-4">
               <h6 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h6>
             </div>
-          <hr>
           </div>
         </div>
       </section>
@@ -639,7 +645,6 @@
               <img src="img/bootstrap.png" alt="Image Debate" class="float-left mr-4">
               <h6 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h6>
             </div>
-          <hr>
           </div>
         </div>
       </section>
@@ -676,7 +681,6 @@
               <img src="img/bootstrap.png" alt="Image Debate" class="float-left mr-4">
               <h6 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h6>
             </div>
-          <hr>
           </div>
         </div>
       </section>
@@ -713,7 +717,6 @@
               <img src="img/bootstrap.png" alt="Image Debate" class="float-left mr-4">
               <h6 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h6>
             </div>
-          <hr>
           </div>
         </div>
       </section>
@@ -750,7 +753,6 @@
               <img src="img/bootstrap.png" alt="Image Debate" class="float-left mr-4">
               <h6 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h6>
             </div>
-          <hr>
           </div>
         </div>
       </section>
@@ -787,7 +789,6 @@
               <img src="img/bootstrap.png" alt="Image Debate" class="float-left mr-4">
               <h6 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h6>
             </div>
-          <hr>
           </div>
         </div>
       </section>
@@ -810,7 +811,7 @@
       <article class="newsletter bg-white p-2">
         <h6 class="f-category">Newsletter</h6>
         <figure class="text-center border-muted border m-auto d-md-flex">
-          <img src="img/newsletter.png" alt="Subscribe" class="img-fluid">
+          <img src="img/newsletter.png" alt="Newsletter" class="img-sm-fluid img-md-fluid img-xm-fluid">
           <figcaption class="text-center border-muted p-3 d-md-flex flex-md-column align-items-start">
             <h5 class="font-weight-bold">The Starting 5</h5>
             <p class="text-md-left">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
@@ -822,18 +823,20 @@
   <!-- Footer section  -->
   <footer>
   <!-- Icons -->
-    <section>
-      <h2 class="f-category">Newsweek</h2>
-      <p class="text-muted small text-uppercase">© 2020 Newsweek</p>
-      <div class="d-flex">
+    <section class="d-lg-flex justify-content-lg-between">
+      <div class="d-lg-flex">
+        <h2 class="f-category">Newsweek</h2>
+        <p class="text-muted small text-uppercase align-self-end">© 2020 Newsweek</p>
+      </div>
+      <div class="d-flex align-self-end">
         <a href="#" class="icons"><i class="fa fa-facebook-official"></i></a>
         <a href="#" class="icons"><i class="fa fa-twitter-square"></i></a>
         <a href="#" class="icons"><i class="fa fa-instagram"></i></a>
         <a href="#" class="icons"><i class="fa fa-tumblr"></i></a>
         <a href="#" class="icons"><i class="fa fa-linkedin"></i></a>
       </div>
-    <hr>
     </section>
+    <hr>
     <!-- Edtions list -->
     <section class="">
       <div class="d-flex">

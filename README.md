@@ -15,6 +15,18 @@ In this project, I'll be cloning Newsweek, a news site that has been builded wit
 
 <a href="https://raw.githack.com/Maclenn77/Building-with-responsive-design/feature-branch/index.html" target="_blank">Check it out</a>💻
 
+## Mobile version
+
+![image](https://user-images.githubusercontent.com/24902525/76662604-769ad580-654c-11ea-858b-1b074a498177.png)
+
+## Middle version
+
+![image](https://user-images.githubusercontent.com/24902525/76662604-769ad580-654c-11ea-858b-1b074a498177.png)
+
+## Large version
+
+![image](https://user-images.githubusercontent.com/24902525/76662604-769ad580-654c-11ea-858b-1b074a498177.png)
+
 ## Getting Started
 
 Just open/double click index.html
