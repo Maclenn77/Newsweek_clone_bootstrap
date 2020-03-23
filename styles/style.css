@@ -30,7 +30,7 @@ article {
 }
 
 img {
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 img[alt="Newsweek Logo"] {
@@ -84,7 +84,7 @@ h3 {
 
 h5 {
   font-size: 16px;
-  font-weight: bold!important;
+  font-weight: bold !important;
 }
 
 h6 a {
@@ -211,7 +211,7 @@ a:hover[class="short"] {
 }
 
 .f-category {
-  color: #ff0500!important;
+  color: #ff0500 !important;
   font-weight: bold;
 }
 
