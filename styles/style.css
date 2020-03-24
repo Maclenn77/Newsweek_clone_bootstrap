@@ -20,6 +20,10 @@ main {
   background-color: #ff0500;
 }
 
+.navcolor {
+  height: 50px;
+}
+
 article {
   margin-bottom: 2rem;
   padding-top: 1.8rem;
@@ -30,7 +34,7 @@ img {
 }
 
 img[alt="Newsweek Logo"] {
-  height: 3rem;
+  height: 2.8rem;
 }
 
 img[alt="Image Profile"] {
@@ -439,6 +443,14 @@ footer ul a:hover {
 
   .toggle-line {
     display: none;
+  }
+
+  .navcolor {
+    height: auto;
+  }
+
+  .form-inline {
+    width: 10%;
   }
 
   img[alt="Newsletter"] {
