@@ -126,10 +126,16 @@ a:hover[class="short"] {
 /* Featured posts */
 .featured-image {
   position: absolute;
-  bottom: 0;
+  bottom: 13px;
   left: 0;
   color: #ff0500;
   background-color: #eaeae7;
+}
+
+.sponsored-text {
+  position: absolute;
+  bottom: 13px;
+  left: 0;
 }
 
 /* Search bar  */
@@ -175,7 +181,7 @@ a:hover[class="short"] {
 
 .bottom-left {
   position: absolute;
-  bottom: -8px;
+  bottom: 4px;
   left: 0;
   background-color: #eaeae7;
 }
@@ -190,7 +196,7 @@ a:hover[class="short"] {
 
 .category-image {
   position: absolute;
-  bottom: 0;
+  bottom: 13px;
   left: 0;
   background-color: #c2d4d7;
 }
@@ -198,7 +204,7 @@ a:hover[class="short"] {
 /* In the magazine */
 .issue-image {
   position: absolute;
-  bottom: 0;
+  bottom: 13px;
   left: 0;
   color: #ff0500;
   background-color: #eaeae7;
@@ -404,6 +410,7 @@ footer ul a:hover {
     grid-template-areas:
       "feat feat feat top top top top opin opin opin"
       "feat feat feat cult cult cult cult opin opin opin"
+      "feat feat feat cult cult cult cult deba deba deba"
       "feat feat feat more more more more deba deba deba"
       "spon spon spon more more more more lnew lnew lnew"
       "spon spon spon more more more more spon2 spon2 spon2"
