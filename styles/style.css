@@ -12,10 +12,6 @@ h6 {
   color: #000 !important;
 }
 
-nav {
-  padding: 0 !important;
-}
-
 main {
   margin: 5px;
 }
@@ -388,10 +384,6 @@ footer ul a:hover {
 
   .newsletter figcaption {
     width: 100vw;
-  }
-
-  .country {
-    display: inline-block;
   }
 }
 
