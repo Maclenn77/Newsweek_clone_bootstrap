@@ -93,7 +93,7 @@ a:hover[class="short"] {
 
 /* Featured posts */
 .position-absolute {
-  bottom: 0px;
+  bottom: 0;
   left: 0;
 }
 
@@ -157,9 +157,6 @@ a:hover[class="short"] {
 }
 
 .category-image {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
   background-color: #c2d4d7;
 }
 
@@ -372,7 +369,6 @@ footer ul a:hover {
       "subs subs subs subs subs subs news news news news";
     grid-template-columns: repeat(10, 9%);
     grid-column-gap: 10px;
-
   }
 
   li h6 {
@@ -406,5 +402,4 @@ footer ul a:hover {
   .navcolor {
     height: 95px;
   }
-
 }
