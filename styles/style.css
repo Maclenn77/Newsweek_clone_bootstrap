@@ -20,27 +20,12 @@ h6 {
   height: 50px;
 }
 
-article {
-  margin-bottom: 2rem;
-  padding-top: 1.8rem;
-}
-
 img {
   margin-bottom: 0.8rem;
 }
 
-/* img[alt="Newsweek Logo"] {
-  height: 2.8rem;
-} */
-
 img[alt="Image Profile"] {
   width: 3.5rem;
-}
-
-img[alt="Image Debate"] {
-  object-fit: cover;
-  height: 5rem;
-  width: 5rem;
 }
 
 img[alt="weather"] {
@@ -449,10 +434,5 @@ footer ul a:hover {
   .navcolor {
     height: 95px;
   }
-
-  img[alt="Image Debate"] {
-    object-fit: cover;
-    height: 5rem;
-    width: 100%;
-  }
+  
 }
