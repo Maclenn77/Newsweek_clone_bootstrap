@@ -29,9 +29,9 @@ img {
   margin-bottom: 0.8rem;
 }
 
-img[alt="Newsweek Logo"] {
+/* img[alt="Newsweek Logo"] {
   height: 2.8rem;
-}
+} */
 
 img[alt="Image Profile"] {
   width: 3.5rem;
@@ -446,12 +446,8 @@ footer ul a:hover {
     width: 10%;
   }
 
-  img[alt="Newsletter"] {
-    display: block;
-    width: 65vw;
-    height: auto;
-    margin: 0;
-    object-fit: cover;
+  .navcolor {
+    height: 95px;
   }
 
   img[alt="Image Debate"] {
