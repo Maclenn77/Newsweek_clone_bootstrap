@@ -38,7 +38,9 @@ img[alt="Image Profile"] {
 }
 
 img[alt="Image Debate"] {
+  object-fit: cover;
   height: 5rem;
+  width: 5rem;
 }
 
 img[alt="weather"] {
@@ -61,8 +63,6 @@ p {
 
 footer {
   background-color: #fff;
-  padding: 1rem 0.8rem;
-  margin-top: 2rem;
 }
 
 a {
@@ -76,11 +76,6 @@ a#sign {
 h4,
 h3 {
   color: #000;
-}
-
-h5 {
-  font-size: 16px;
-  font-weight: bold !important;
 }
 
 h6 a {
@@ -120,18 +115,14 @@ a:hover[class="short"] {
 }
 
 /* Featured posts */
-.featured-image {
-  position: absolute;
+.position-absolute {
   bottom: 13px;
   left: 0;
-  color: #ff0500;
-  background-color: #eaeae7;
 }
 
-.sponsored-text {
-  position: absolute;
-  bottom: 13px;
-  left: 0;
+.featured-image {
+  color: #ff0500;
+  background-color: #eaeae7;
 }
 
 /* Search bar  */
@@ -176,8 +167,7 @@ a:hover[class="short"] {
 }
 
 .bottom-left {
-  position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   left: 0;
   background-color: #eaeae7;
 }
@@ -462,5 +452,11 @@ footer ul a:hover {
     height: auto;
     margin: 0;
     object-fit: cover;
+  }
+
+  img[alt="Image Debate"] {
+    object-fit: cover;
+    height: 5rem;
+    width: 100%;
   }
 }
