@@ -15,7 +15,13 @@ Navbar has the sticky-top class for keep visible all the time.
 
 Menu is collpased by the toggler option of Bootstrap. When it's large size, Menu is showed.
 
-## Main 
+## Main
+
+Main is a column in the small version and it's ordered by grid im the middle ad large size. Grid allows to move the sections and avoid some problems caused by Flexbox about space.
+
+## footer
+
+Footer use list and flexbox to order icons and links.
 
 ## Built With
 
