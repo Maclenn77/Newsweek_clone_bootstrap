@@ -20,14 +20,6 @@ h6 {
   height: 50px;
 }
 
-img {
-  margin-bottom: 0.8rem;
-}
-
-img[alt="Image Profile"] {
-  width: 3.5rem;
-}
-
 img[alt="weather"] {
   width: 1.2rem;
 }
@@ -212,7 +204,6 @@ a:hover[class="short"] {
   color: #fff;
   font-weight: bold;
   max-width: 120;
-  margin: 20px auto;
 }
 
 a.anchor-news:hover {
@@ -358,14 +349,6 @@ footer ul a:hover {
   .subs-text {
     margin-right: auto;
   }
-
-  .anchor-news {
-    margin: 20px auto 20px 5px;
-  }
-
-  .newsletter figcaption {
-    width: 100vw;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -389,18 +372,9 @@ footer ul a:hover {
       "maga maga maga maga maga maga maga maga maga maga"
       "edit edit edit edit edit edit edit edit edit edit"
       "feas feas feas feas feas feas feas feas feas feas"
-      "subs subs subs subs subs subs subs news news news";
+      "subs subs subs subs subs subs news news news news";
     grid-template-columns: repeat(10, 9%);
     grid-column-gap: 10px;
-  }
-
-  .newsletter figcaption {
-    width: 60vw;
-  }
-
-  img[alt="Newsweek Logo"] {
-    height: 8rem;
-    margin: auto;
   }
 
   li h6 {
@@ -434,5 +408,5 @@ footer ul a:hover {
   .navcolor {
     height: 95px;
   }
-  
+
 }
