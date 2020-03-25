@@ -93,7 +93,7 @@ a:hover[class="short"] {
 
 /* Featured posts */
 .position-absolute {
-  bottom: 13px;
+  bottom: 0px;
   left: 0;
 }
 
@@ -132,8 +132,6 @@ a:hover[class="short"] {
 /* Sponsored section */
 .img-container {
   position: relative;
-  width: 100%;
-  height: auto;
 }
 
 .art-container {
@@ -144,7 +142,8 @@ a:hover[class="short"] {
 }
 
 .bottom-left {
-  bottom: 5px;
+  position: absolute;
+  bottom: -8px;
   left: 0;
   background-color: #eaeae7;
 }
@@ -159,16 +158,13 @@ a:hover[class="short"] {
 
 .category-image {
   position: absolute;
-  bottom: 13px;
+  bottom: 0px;
   left: 0;
   background-color: #c2d4d7;
 }
 
 /* In the magazine */
 .issue-image {
-  position: absolute;
-  bottom: 13px;
-  left: 0;
   color: #ff0500;
   background-color: #eaeae7;
 }
@@ -343,7 +339,7 @@ footer ul a:hover {
   }
 
   .posts-small {
-    width: 25vw;
+    width: 30vw;
   }
 
   .subs-text {
@@ -360,6 +356,7 @@ footer ul a:hover {
   .grid-area {
     display: grid;
     max-width: 1224px;
+    height: auto;
     margin: auto;
     grid-template-areas:
       "feat feat feat top top top top opin opin opin"
@@ -375,6 +372,7 @@ footer ul a:hover {
       "subs subs subs subs subs subs news news news news";
     grid-template-columns: repeat(10, 9%);
     grid-column-gap: 10px;
+
   }
 
   li h6 {
