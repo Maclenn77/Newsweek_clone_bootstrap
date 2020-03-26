@@ -33,12 +33,12 @@ h6 {
   height: auto;
 }
 
-.overflow-auto::-webkit-scrollbar {
-  display: none;
-}
-
 .overflow-auto {
   scrollbar-width: none;  /* Firefox */
+}
+
+.overflow-auto::-webkit-scrollbar {
+  display: none;
 }
 
 img[alt="weather"] {
