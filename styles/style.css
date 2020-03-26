@@ -7,7 +7,6 @@ body {
 }
 
 /* Marked important to overlap bootstrap rules */
-
 h6 {
   color: #000 !important;
 }
