@@ -20,6 +20,15 @@ h6 {
   height: 50px;
 }
 
+.icon {
+  height: 32px;
+}
+
+.profile {
+  max-width: 95px;
+  height: auto;
+}
+
 img[alt="weather"] {
   width: 1.2rem;
 }
@@ -40,6 +49,7 @@ p {
 
 footer {
   background-color: #fff;
+  max-width: 1224px;
 }
 
 a {
@@ -397,5 +407,9 @@ footer ul a:hover {
 
   .navcolor {
     height: 95px;
+  }
+
+  .profile {
+    width: auto;
   }
 }
