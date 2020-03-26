@@ -286,7 +286,6 @@ footer ul a:hover {
 
 .sponsored-2 {
   grid-area: spon2;
-  height: 300px;
 }
 
 .magazine {
@@ -348,6 +347,10 @@ footer ul a:hover {
 
   .feat-extra {
     display: block;
+  }
+
+  .sponsored-2 {
+    width: 50%;
   }
 
   .editor-pick .travel-container {
