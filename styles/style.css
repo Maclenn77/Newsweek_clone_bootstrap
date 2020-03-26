@@ -33,6 +33,14 @@ h6 {
   height: auto;
 }
 
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+
+.overflow-auto {
+  scrollbar-width: none;  /* Firefox */
+}
+
 img[alt="weather"] {
   width: 1.2rem;
 }
@@ -278,6 +286,7 @@ footer ul a:hover {
 
 .sponsored-2 {
   grid-area: spon2;
+  height: 300px;
 }
 
 .magazine {
@@ -367,7 +376,7 @@ footer ul a:hover {
   .grid-area {
     display: grid;
     max-width: 1224px;
-    height: auto;
+    height: 2350px;
     margin: auto;
     grid-template-areas:
       "feat feat feat top top top top opin opin opin"
@@ -375,8 +384,17 @@ footer ul a:hover {
       "feat feat feat cult cult cult cult deba deba deba"
       "feat feat feat more more more more deba deba deba"
       "spon spon spon more more more more lnew lnew lnew"
-      "spon spon spon more more more more spon2 spon2 spon2"
-      "spon spon spon more more more more spon2 spon2 spon2"
+      "spon spon spon more more more more spon2 spon2 spon2";
+    grid-template-columns: repeat(10, 9%);
+    grid-column-gap: 10px;
+  }
+
+  .grid-second-area {
+    display: grid;
+    max-width: 1224px;
+    height: auto;
+    margin: auto;
+    grid-template-areas:
       "maga maga maga maga maga maga maga maga maga maga"
       "edit edit edit edit edit edit edit edit edit edit"
       "feas feas feas feas feas feas feas feas feas feas"
@@ -415,5 +433,9 @@ footer ul a:hover {
 
   .profile {
     width: auto;
+  }
+
+  .sponsored-2 {
+    height: 300px;
   }
 }
