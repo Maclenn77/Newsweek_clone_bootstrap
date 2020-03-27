@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="zxx">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Newsweek clone</title>
+  </head>
+  <body>
+    <!-- Header of the Page. It contains name of the site and a navbar -->
+    <!-- Navbar transforms the header in a navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top flex-column navbar-dark p-0">
+      <!-- Red part of navbar -->
+      <header class="d-flex flex-row align-self-end justify-content-center navcolor w-100 px-2 justify-content-lg-between">
+        <a class="navbar-brand order-lg-2 p-0 w-25 h-auto w-lg-100" href="#"> <img src="img/Newsweek_Logo.png" alt="Newsweek Logo" class="img-fluid h-100 w-100"></a>
+        <div class="weather-time align-self-center mr-auto order-lg-1 d-lg-flex flex-column mr-lg-0 ml-lg-2">
+          <a href="#"><img src="https://g.newsweek.com/img/weather/34.png" alt="weather" class="img-fluid">18° <span class="d-none d-md-inline-block font-weight-bold">Tlajomulco, Mx ></span></a>
+          <time class="d-none d-lg-block" datetime="2020-03-20">Fri, Mar 20, 2020</time>
+        </div>
+        <div class="align-self-center d-block m-3 order-lg-3 h5">
+          <span class="text-uppercase font-weight-bold text-white px-2"><a href="#">Sign in</a></span>
+          <span class="text-uppercase font-weight-bold bg-white px-2 py-1"><a href="#" id="sign">Subscribe ></a></span>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+        </button>
+      </header>
+      <!-- White part of navbar -->
+      <div class="font-weight-bold collapse navbar-collapse w-100 bg-white" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0 input-group d-flex d-lg-none">
+          <input class="form-control mr-sm-2 input-group-text" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn my-2 my-sm-0 input-group-append" type="submit"><i class="material-icons">search</i></button>
+        </form>
+        <ul class="d-flex align-items-end navbar-nav ml-auto mr-md-0 ml-md-6 w-100 justify-content-lg-around">
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">U.S. <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">World <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Business <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Tech & Science <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Culture <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Newsgeek <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Sports <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Health <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">The Debate <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Vantage <span class="large text-muted"> | </span><span class="short"> > </span></a></h6>
+              </li>
+              <li class="nav-item">
+                <h6><a class="nav-link text-nowrap" href="#">Weather <span class="short"> > </span></a></h6>
+              </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 input-group d-none d-lg-flex">
+          <input class="form-control mr-sm-2 input-group-text" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn my-2 my-sm-0 input-group-append" type="submit"><i class="material-icons">search</i></button>
+        </form>
+      </div>
+    </nav>
+    <!-- Main section  -->
+  <main class="bg-white m-auto mx-lg-3">
+    <div class="grid-area">
+      <!-- Top story -->
+      <article class="px-2 top-story mb-4 bg-white">
+        <h5 class="font-weight-bold text-muted text-uppercase">Top Story</h5>
+        <img class="img-fluid" src="img/bootstrap-top.jpg" alt="Bootstrap">
+        <h2 class="text-weight-bold"><a href="#">Bootstrap makes building a site faster, developers say</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </article>
+      <!-- Featured stories -->
+      <article class="px-2 featured-stories bg-white">
+        <h5 class="font-weight-bold text-muted text-uppercase">Featured Stories</h5>
+        <img class="img-fluid" src="img/image-1.png" alt="Image 1">
+        <h2 class="text-weight-bold"><a href="#">Web design never was so easy</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <img class="img-fluid" src="img/image-2.png" alt="Image 2">
+        <h2 class="text-weight-bold"><a href="#">Is Bootstrap 4 the future framework?</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        <img class="img-fluid feat-extra" src="img/image-2.png" alt="Image 2">
+        <h2 class="text-weight-bold feat-extra"><a href="#">Is Bootstrap 4 the future framework?</a></h2>
+        <p class="feat-extra">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </article>
+      <!-- Opinion section-->
+      <article class="px-2 opinion-section bg-white mb-3">
+        <h5 class="font-weight-bold text-muted text-uppercase">Opinion</h5>
+      <section class="row">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="profile col-2 col-lg-4 rounded-circle align-self-center mr-3">
+        <div class="col">
+          <h4 class="font-weight-bold">Bootstrap is ok</h4>
+          <p class="font-weight-bold text-muted text-uppercase">By Mark Otto</p>
+        </div>
+      </section>
+        <hr>
+      <section class="row">
+          <img src="img/bootstrap.webp" alt="Image Profile" class="profile col-2 col-lg-4 rounded-circle align-self-center mr-3">
+        <div class="col">
+          <h4 class="font-weight-bold">Bootstrap is ok</h4>
+          <p class="font-weight-bold text-muted text-uppercase">By Mark Otto</p>
+        </div>
+      </section>
+        <hr>
+      <section class="row">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="profile col-2 col-lg-4 rounded-circle align-self-center mr-3">
+        <div class="col">
+          <h4 class="font-weight-bold">Bootstrap is ok</h4>
+          <p class="font-weight-bold text-muted text-uppercase">By Mark Otto</p>
+        </div>
+      </section>
+        <hr>
+        <section class="row">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="profile col-2 col-lg-4 rounded-circle align-self-center mr-3">
+        <div class="col">
+          <h4 class="font-weight-bold">Bootstrap is ok</h4>
+          <p class="font-weight-bold text-muted text-uppercase">By Mark Otto</p>
+        </div>
+      </section>
+        <hr>
+        <section class="row">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="profile col-2 col-lg-4 rounded-circle align-self-center mr-3">
+        <div class="col">
+          <h4 class="font-weight-bold">Bootstrap is ok</h4>
+          <p class="font-weight-bold text-muted text-uppercase">By Mark Otto</p>
+        </div>
+      </section>
+        <hr>
+        <section class="row">
+        <img src="img/bootstrap.webp" alt="Image Profile" class="profile col-2 col-lg-4 rounded-circle align-self-center mr-3">
+        <div class="col">
+          <h4 class="font-weight-bold">Bootstrap is ok</h4>
+          <p class="font-weight-bold text-muted text-uppercase">By Mark Otto</p>
+        </div>
+      </section>
+      </article>
+      <!-- The Debate section -->
+      <article class="d-flex px-2 debate-section flex-column bg-white">
+        <h5 class="font-weight-bold text-muted text-uppercase">The Debate</h5>
+        <div class="container-fluid">
+        <div class="row">
+          <hr class="col debate-pro mx-2 p-0 mb-0">
+        </div>
+        <div class="row">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="col-sm-3 col-md-2 col-lg-5">
+          <h2 class="col h5 mt-2 mb-3 font-weight-bold"><a href="#">Bootstrap is the framework of the future</a></h2>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle debate-profile float-right w-25 d-none d-lg-inline">
+            <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle debate-profile float-right d-lg-none">
+            <hr class="mb-1 debate">
+            <hr class="m-0 debate">
+            <p class="text-uppercase">By <span class="font-weight-bold">Mark Otto</span></p>
+          </div>
+        </div>
+        <p class="text-center text-white"><span class="vs p-2">Vs</span></p>
+        <div class="row">
+          <hr class="col debate-con mx-2 p-0 mb-0">
+        </div>
+        <div class="row">
+          <img src="img/zurb-foundation.jpg" alt="Image Debate" class="col-sm-3 col-md-2 col-lg-5">
+          <h2 class="col h5 mt-2 mb-3 font-weight-bold"><a href="#">Bootstrap is not the framework of the future</a></h2>
+        </div>
+        <div class="clearfix">
+          <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle debate-profile float-right w-25 d-none d-lg-inline">
+          <img src="img/bootstrap.webp" alt="Image Profile" class="rounded-circle debate-profile float-right d-lg-none">
+          <hr class="mb-1 debate">
+          <hr class="m-0 debate">
+          <p class="text-uppercase">By <span class="font-weight-bold">Zurb Foundation</span></p>
+        </div>
+        </div>
+      </article>
+      <!-- Sponsored Insights -->
+      <section class="sponsored flex-column bg-white mt-6 overflow-auto">
+        <h5 class="font-weight-bold d-none">Sponsored Insight</h5>
+          <article class="art-container">
+          <figure class="img-container m-auto">
+            <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            <figcaption>
+              <h3 class="text-uppercase text-primary bottom-left p-2 h6 font-weight-bold">Sponsored Insight</h3>
+            </figcaption>
+          </figure>
+          <div class="border">
+            <h3 class="font-weight-bold">Winter is coming!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </article>
+          <article class="art-container">
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              <figcaption>
+                <h3 class="text-uppercase text-primary bottom-left p-2 h6 font-weight-bold">Sponsored Insight</h3>
+              </figcaption>
+            </figure>
+            <div class="border">
+              <h3 class="font-weight-bold">Winter is coming!</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </article>
+          <article class="art-container">
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              <figcaption>
+                <h3 class="text-uppercase text-primary bottom-left p-2 h6 font-weight-bold">Sponsored Insight</h3>
+              </figcaption>
+            </figure>
+            <div class="border">
+              <h3 class="font-weight-bold">Winter is coming!</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </article>
+      </section>
+    <!-- More stories -->
+      <article class="px-2 more-stories bg-white overflow-auto">
+        <h5 class="font-weight-bold text-muted text-uppercase">More stories</h5>
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+        <section class="border-top d-flex p-2">
+          <img src="img/bootstrap.jpg" alt="Image Debate" class="float-left mr-4 img-fluid w-50 h-50">
+          <div class="d-flex flex-column">
+            <h5 class="font-weight-bold"><a href="#">CSS is easier with bootstrap!</a></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        </section>
+      </article>
+    <!-- Culture & travel section -->
+      <article class="px-2 culture-travel bg-white">
+        <h5 class="font-weight-bold text-muted text-uppercase">Culture & Travel</h5>
+        <div class="d-flex flex-column flex-md-row">
+          <section class="travel-container">
+            <figure class="img-container m-auto">
+          <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+          <figcaption class="category-image position-absolute pl-2 pr-2 small">
+            Travel
+          </figcaption>
+            </figure>
+            <h5 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="d-none d-lg-inline text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </section>
+          <section class="travel-container">
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              <figcaption class="category-image position-absolute pl-2 pr-2 small">
+              Travel
+              </figcaption>
+            </figure>
+            <h5 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="d-none d-lg-inline text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </section>
+          <section class="travel-container">
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              <figcaption class="category-image position-absolute pl-2 pr-2 small">
+                Travel
+            </figcaption>
+            </figure>
+            <h5 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h5>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="d-none d-lg-inline text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </section>
+        </div>
+      </article>
+    <!-- Latest News section -->
+      <article class="px-2 latest-news bg-white">
+        <h5 class="font-weight-bold text-muted text-uppercase">Latest News</h5>
+        <div class="container-fluid">
+          <section class="row">
+            <img src="img/cascade.png" alt="Image Debate" class="col-2 col-lg-4 img-fluid w-100">
+            <h4 class="col-10 col-lg-8 font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+          </section>
+          <hr>
+          <section class="row">
+            <img src="img/cascade.png" alt="Image Debate" class="col-2 col-lg-4 img-fluid w-25">
+            <h4 class="col-10 col-lg-8 font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+          </section>
+          <hr>
+          <section class="row">
+            <img src="img/cascade.png" alt="Image Debate" class="col-2 col-lg-4 img-fluid w-25">
+            <h4 class="col-10 col-lg-8 font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+          </section>
+          <hr>
+          <section class="row">
+            <img src="img/cascade.png" alt="Image Debate" class="col-2 col-lg-4 img-fluid w-25">
+            <h4 class="col-10 col-lg-8 font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+          </section>
+          <hr>
+          <section class="row">
+            <img src="img/cascade.png" alt="Image Debate" class="col-2 col-lg-4 img-fluid w-25">
+            <h4 class="col-10 col-lg-8 font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+          </section>
+          <hr>
+          <section class="row">
+            <img src="img/cascade.png" alt="Image Debate" class="col-2 col-lg-4 img-fluid w-25">
+            <h4 class="col-10 col-lg-8 font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+          </section>
+        </div>
+        </article>
+    <!-- Sponsored Insights -->
+      <article class="px-2 sponsored-2 bg-white px-6 m-auto overflow-auto">
+        <h2 class="d-none">Category</h2>
+        <section class="art-container">
+          <figure class="img-container m-auto">
+            <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            <figcaption>
+              <h3 class="text-uppercase text-primary bottom-left p-2 h6 font-weight-bold">Sponsored Insight</h3>
+            </figcaption>
+          </figure>
+          <div class="border">
+            <h3 class="font-weight-bold">Winter is coming!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </section>
+        <section class="art-container">
+          <figure class="img-container m-auto">
+            <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            <figcaption>
+              <h3 class="text-uppercase text-primary bottom-left p-2 h6 font-weight-bold">Sponsored Insight</h3>
+            </figcaption>
+          </figure>
+          <div class="border">
+            <h3 class="font-weight-bold">Winter is coming!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </section>
+        <section class="art-container">
+          <figure class="img-container m-auto">
+            <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            <figcaption>
+              <h3 class="text-uppercase text-primary bottom-left p-2 h6 font-weight-bold">Sponsored Insight</h3>
+            </figcaption>
+          </figure>
+          <div class="border">
+            <h3 class="font-weight-bold">Winter is coming!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </section>
+      </article>
+    </div>
+    <div class="grid-second-area">
+    <!-- In the magazine section -->
+      <article class="px-2 magazine bg-white p-2">
+        <div class="d-flex justify-content-center">
+          <img src="img/newsicon.png" alt="Newsweek icon" class="icon mr-2"> <h2 class="text-center font-weight-bold h4">In the Magazine</h2>
+        </div>
+        <div class="row row-cols-md-4">
+          <div class="col-md">
+            <a href="#">
+              <figure class="img-container">
+                <img src="img/newsweekcover.jpg" alt="Newsweek cover" class="img-fluid">
+                <figcaption class="issue-image position-absolute font-weight-bold">March Issue</figcaption>
+              </figure>
+            </a>
+            <a href="#">
+              <div class="d-flex justify-content-center">
+                <h5 class="font-weight-bold text-center font-weight-bold text-uppercase">See all features</h5> <i class="material-icons see-features">keyboard_arrow_right</i>
+              </div>
+            </a>
+          </div>
+          <section class="feature-notes col-md">
+            <img class="img-fluid" src="img/image-1.png" alt="Image 1">
+            <div class="d-flex mt-2">
+              <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
+            </div>
+          <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
+        </section>
+          <section class="feature-notes col-md">
+            <img class="img-fluid" src="img/image-1.png" alt="Image 1">
+            <div class="d-flex mt-2">
+            <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
+          </div>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
+          </section>
+          <section class="feature-notes col-md">
+            <img class="img-fluid" src="img/image-1.png" alt="Image 1">
+            <div class="d-flex mt-2">
+              <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
+            </div>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
+          </section>
+          <section class="feature-notes col-md">
+            <img class="img-fluid" src="img/image-1.png" alt="Image 1">
+            <div class="d-flex mt-2">
+              <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a   href="#">Health</a></h6>
+            </div>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
+          </section>
+          <section class="feature-notes col-md">
+            <img class="img-fluid" src="img/image-1.png" alt="Image 1">
+            <div class="d-flex mt-2">
+            <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
+            </div>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
+          </section>
+          <section class="feature-notes col-md">
+            <img class="img-fluid" src="img/image-1.png" alt="Image 1">
+            <div class="d-flex mt-2">
+              <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
+            </div>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
+          </section>
+          <section class="feature-notes col-md">
+            <img class="img-fluid" src="img/image-1.png" alt="Image 1">
+            <div class="d-flex mt-2">
+              <h6 class="features p-1">Features</h6> <h6 class="f-category p-1 text-uppercase"><a href="#">Health</a></h6>
+            </div>
+            <h4 class="font-weight-bold"><a href="#"> Is Bootstrap for everybody?</a></h4>
+          </section>
+        </div>
+      </article>
+    <!--Editor's pick section -->
+      <article class="px-2 editor-pick bg-white p-2">
+        <div class="d-flex justify-content-center">
+          <img src="img/newsicon.png" alt="Newsweek icon" class="icon mr-2 align-self-center"> <h2 class="text-center font-weight-bold h4 m-2">Editor's pick</h2>
+        </div>
+        <hr>
+        <div class="row row-cols-md-2">
+          <section class="travel-container col-md">
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              <figcaption class="featured-image position-absolute pl-2 pr-2 font-weight-bold">
+                Tech & Science
+              </figcaption>
+              </figure>
+              <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </section>
+          <section class="travel-container col-md">
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              <figcaption class="featured-image position-absolute pl-2 pr-2 font-weight-bold">
+            Tech & Science
+              </figcaption>
+            </figure>
+            <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </section>
+          <section class="travel-container col-md">
+            <figure class="img-container m-auto">
+            <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              <figcaption class="featured-image position-absolute pl-2 pr-2 font-weight-bold">
+            Tech & Science
+              </figcaption>
+            </figure>
+            <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </section>
+          <section class="travel-container col-md">
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone"  class="img-fluid">
+              <figcaption class="featured-image position-absolute pl-2 pr-2 font-weight-bold">
+            Tech & Science
+              </figcaption>
+            </figure>
+            <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </section>
+          <section class="travel-container col-md">
+            <figure class="img-container m-auto">
+            <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            <figcaption class="featured-image position-absolute pl-2 pr-2 font-weight-bold">
+            Tech & Science
+            </figcaption>
+            </figure>
+            <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </section>
+          <section class="travel-container col-md">
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              <figcaption class="featured-image position-absolute pl-2 pr-2 font-weight-bold">
+            Tech & Science
+            </figcaption>
+          </figure>
+          <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+        <section class="travel-container col-md">
+          <figure class="img-container m-auto">
+          <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            <figcaption class="featured-image position-absolute pl-2 pr-2 font-weight-bold">
+            Tech & Science
+            </figcaption>
+          </figure>
+          <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+        <section class="travel-container col-md">
+          <figure class="img-container m-auto">
+            <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            <figcaption class="featured-image position-absolute pl-2 pr-2 font-weight-bold">
+            Tech & Science
+          </figcaption>
+          </figure>
+          <h3 class="font-weight-bold"><a href="#">Yes! It's the same winter landscape</a></h3>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+      </div>
+      </article>
+    <!-- Featured slide shows -->
+    <article class="px-2 featured-slide bg-white p-2">
+      <div class="d-flex justify-content-center">
+        <img src="img/newsicon.png" alt="Newsweek icon" class="icon mr-2"> <h2 class="text-center font-weight-bold h4">FEATURED SLIDESHOWS</h2>
+      </div>
+      <hr>
+      <!-- Main Featured -->
+      <div class="d-md-flex">
+        <section class="travel-container">
+          <figure class="img-container m-auto">
+            <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            <figcaption class="featured-image position-absolute pl-2 pr-2 font-weight-bold">
+              <div class="border-danger border-top border-left m-1">
+                <div class="border-danger border-top border-left m-1">
+                  <span class="border border-danger pr-2 pl-2 m-1">11</span>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+          <h3><a href="#">Look at this winter images!</a></h3>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+        <section class="travel-container">
+          <figure class="img-container m-auto">
+            <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            <figcaption class="featured-image position-absolute pl-2 pr-2 font-weight-bold">
+              <div class="border-danger border-top border-left m-1">
+                <div class="border-danger border-top border-left m-1">
+                  <span class="border border-danger pr-2 pl-2 m-1">11</span>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+          <h3><a href="#">Look at this winter images!</a></h3>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+        <section class="travel-container">
+          <figure class="img-container m-auto">
+            <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            <figcaption class="featured-image position-absolute pl-2 pr-2 font-weight-bold">
+              <div class="border-danger border-top border-left m-1">
+                <div class="border-danger border-top border-left m-1">
+                  <span class="border border-danger pr-2 pl-2 m-1">11</span>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+          <h3><a href="#">Look at this winter images!</a></h3>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+      </div>
+      <hr>
+      <!-- Categories -->
+      <section>
+        <h4 class="f-category h5">U.S.</h4>
+        <div class="d-md-flex">
+          <!-- Big images -->
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            </figure>
+            <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <!-- Small images -->
+          <div class="h-50">
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h4 class="f-category h5">U.S.</h4>
+        <div class="d-md-flex">
+          <!-- Big images -->
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            </figure>
+            <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <!-- Small images -->
+          <div>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h4 class="f-category h5">U.S.</h4>
+        <div class="d-md-flex">
+          <!-- Big images -->
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            </figure>
+            <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <!-- Small images -->
+          <div>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h4 class="f-category h5">U.S.</h4>
+        <div class="d-md-flex">
+          <!-- Big images -->
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            </figure>
+            <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <!-- Small images -->
+          <div>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h4 class="f-category h5">U.S.</h4>
+        <div class="d-md-flex">
+          <!-- Big images -->
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            </figure>
+            <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <!-- Small images -->
+          <div>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h4 class="f-category h5">U.S.</h4>
+        <div class="d-md-flex">
+          <!-- Big images -->
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+              </figure>
+              <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <div>
+            <figure class="img-container m-auto">
+              <img src="img/yellowstone.jpg" alt="Yellowstone" class="img-fluid">
+            </figure>
+            <h5 class="font-weight-bold"><a href="#">Look at this winter images!</a></h5>
+          </div>
+          <!-- Small images -->
+          <div>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          <hr>
+            <div class="d-flex posts-small">
+              <img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-25 d-md-none d-lg-block"><img src="img/cascade.png" alt="Image Debate" class="float-left mr-4 img-fluid w-50 d-none d-md-block d-lg-none">
+              <h4 class="font-weight-bold clearfix"><a href="#">CSS is easier with bootstrap!</a></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    <!-- Subscribe section -->
+    <article class="subscribe bg-white p-2 p-lg-0 ">
+        <h6 class="f-category">Subscribe</h6>
+        <section class="p-4 d-flex flex-column m-2 subs flex-md-row">
+          <figure class="text-center">
+            <img src="img/subscribe.png" alt="Subscribe" class="img-fluid">
+          </figure>
+          <div class="d-flex flex-column alig-items-md-start subs-text">
+              <h2 class="text-center text-md-left h5 font-weight-bold p-2">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h2>
+              <p class="text-center text-md-left p-3">All Access + Weekly Delivery.<br/>Choose A Membership That's Perfect for You!</p>
+              <a href="#" class="text-uppercase text-center text-md-left p-2 mr-auto anchor-news">Subscribe</a>
+          </div>
+        </section>
+      </article>
+    <!-- Newsletter section  -->
+    <article class="newsletter bg-white h-100 d-none d-lg-block">
+      <h6 class="f-category">Newsletter</h6>
+        <figure class="row">
+          <img src="img/newsletter.png" alt="Newsletter" class="col w-100 img-fluid">
+          <figcaption class="col text-center border-muted p-3 d-md-flex flex-md-column align-items-start">
+            <h5 class="font-weight-bold">The Starting 5</h5>
+            <p class="text-md-left">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
+            <a href="#" class="text-uppercase text-center p-2 anchor-news">Sign Up</a>
+          </figcaption>
+      </figure>
+    </article>
+
+      <article class="newsletter bg-white p-2 d-lg-none">
+        <h6 class="f-category">Newsletter</h6>
+        <figure class="text-center border-muted border m-auto d-md-flex">
+          <img src="img/newsletter.png" alt="Newsletter" class="img-sm-fluid w-100 img-md-fluid img-xm-fluid d-lg-none">
+          <figcaption class="text-center border-muted p-3 d-md-flex flex-md-column align-items-start">
+            <h5 class="font-weight-bold">The Starting 5</h5>
+            <p class="text-md-left">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
+            <a href="#" class="text-uppercase text-center p-2 anchor-news">Sign Up</a>
+          </figcaption>
+        </figure>
+      </article>
+    </div>
+  </main>
+  <!-- Footer section  -->
+  <footer class="m-3 px-2 py-1 m-lg-auto">
+  <!-- Icons -->
+    <section class="d-lg-flex justify-content-lg-between">
+      <div class="d-lg-flex">
+        <h2 class="f-category">Newsweek</h2>
+        <p class="text-muted small text-uppercase align-self-end">© 2020 Newsweek</p>
+      </div>
+      <div class="d-flex align-self-end">
+        <a href="#" class="icons"><i class="fa fa-facebook-official"></i></a>
+        <a href="#" class="icons"><i class="fa fa-twitter-square"></i></a>
+        <a href="#" class="icons"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="icons"><i class="fa fa-tumblr"></i></a>
+        <a href="#" class="icons"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </section>
+    <hr>
+    <!-- Edtions list -->
+    <section class="">
+      <div class="d-flex">
+      <h3 class="h5 text-secondary font-weight-bold mr-4">Editions:</h3>
+      <ul class="list-inline text-muted">
+        <li class="list-inline-item"><a href="#">U.S. Edition</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">Romania</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">Polska</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+      </ul>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+        <li class="list-inline-item"><a href="#">About us</a><span class="text-secondary d-sm-none d-md-inline"> |</span></li>
+      </ul>
+    </section>
+  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
